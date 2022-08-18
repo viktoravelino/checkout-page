@@ -18,7 +18,12 @@ export function Select({
   ...props
 }: ISelectProps) {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       <SelectStyled error={error} {...props}>
         {placeholder && <option value="placeholder">{placeholder}</option>}
         {options &&
